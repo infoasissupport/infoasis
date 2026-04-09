@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoAsis - Future of Technology</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-text">INFOASIS</div>
+        <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- BACKGROUND PARTICLES -->
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <a href="#hero" class="logo"><img src="images/info-logo-white.png"</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#technologies">Tech</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="images/video-3.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+    
+        <div class="hero-content">
+            <div class="hero-tag" id="heroTag">Fly to Future</div>
+            <h1 class="hero-title" id="heroTitle">
+                <span class="line1">ENGINEERING THE</span>
+                <span class="line2">FUTURE OF TECH</span>
+            </h1>
+            <p class="hero-sub" id="heroSub">We build cutting-edge digital products that transform businesses through innovative technology, AI-driven solutions, and world-class engineering.</p>
+            <div class="hero-buttons" id="heroButtons">
+                <a href="#contact" class="btn-primary">Get Started</a>
+                <a href="#portfolio" class="btn-outline">Our Work</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="section-header">
+            <span class="section-tag">What We Do</span>
+            <h2 class="section-title">Our Services</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">We deliver end-to-end technology solutions that drive innovation and accelerate growth for businesses worldwide.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-color="cyan">
+                <div class="service-card-number">01</div>
+                <div class="service-card-top">
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI & Machine Learning</h3>
+                </div>
+                <p>Intelligent systems powered by deep learning, NLP, and computer vision that automate processes and unlock data-driven insights for your business.</p>
+                <div class="service-tags">
+                    <span>Deep Learning</span>
+                    <span>NLP</span>
+                    <span>Computer Vision</span>
+                </div>
+                <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="service-card" data-color="purple">
+                <div class="service-card-number">02</div>
+                <div class="service-card-top">
+                    <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Architecture</h3>
+                </div>
+                <p>Scalable, resilient cloud infrastructure on AWS, Azure, and GCP. Microservices, Kubernetes orchestration, and serverless solutions engineered for growth.</p>
+                <div class="service-tags">
+                    <span>AWS</span>
+                    <span>Kubernetes</span>
+                    <span>Serverless</span>
+                </div>
+                <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="service-card" data-color="cyan">
+                <div class="service-card-number">03</div>
+                <div class="service-card-top">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Development</h3>
+                </div>
+                <p>Native and cross-platform mobile apps with fluid animations, offline-first architecture, and seamless user experiences across iOS and Android.</p>
+                <div class="service-tags">
+                    <span>React Native</span>
+                    <span>Flutter</span>
+                    <span>Swift</span>
+                </div>
+                <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="service-card" data-color="purple">
+                <div class="service-card-number">04</div>
+                <div class="service-card-top">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cybersecurity</h3>
+                </div>
+                <p>End-to-end security solutions including penetration testing, zero-trust architecture, SOC monitoring, and compliance frameworks for enterprise protection.</p>
+                <div class="service-tags">
+                    <span>Pen Testing</span>
+                    <span>Zero Trust</span>
+                    <span>SOC</span>
+                </div>
+                <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="service-card" data-color="purple">
+                <div class="service-card-number">05</div>
+                <div class="service-card-top">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                </div>
+                <p>High-performance web applications built with modern frameworks, optimized for speed, accessibility, and SEO. From SaaS platforms to enterprise portals.</p>
+                <div class="service-tags">
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>Node.js</span>
+                </div>
+                <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="service-card" data-color="cyan">
+                <div class="service-card-number">06</div>
+                <div class="service-card-top">
+                    <div class="service-icon"><i class="fas fa-cubes"></i></div>
+                    <h3>Blockchain & Web3</h3>
+                </div>
+                <p>Decentralized applications, smart contracts, and tokenized ecosystems. Building the next generation of trustless, transparent digital infrastructure.</p>
+                <div class="service-tags">
+                    <span>Solidity</span>
+                    <span>Smart Contracts</span>
+                    <span>DeFi</span>
+                </div>
+                <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGIES -->
+    <section id="technologies">
+        <div class="section-header">
+            <span class="section-tag">Our Stack</span>
+            <h2 class="section-title">Technologies</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Cutting-edge tools and frameworks we use to build world-class products.</p>
+        </div>
+
+        <!-- Marquee Row 1 - scrolls left -->
+        <div class="tech-marquee">
+            <div class="tech-marquee-track marquee-left">
+                <div class="tech-card"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="tech-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                <div class="tech-card"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="tech-card"><i class="fab fa-aws"></i><span>AWS</span></div>
+                <div class="tech-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+                <div class="tech-card"><i class="fab fa-js-square"></i><span>TypeScript</span></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="tech-card"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="tech-card"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                <div class="tech-card"><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="tech-card"><i class="fab fa-aws"></i><span>AWS</span></div>
+                <div class="tech-card"><i class="fab fa-docker"></i><span>Docker</span></div>
+                <div class="tech-card"><i class="fab fa-js-square"></i><span>TypeScript</span></div>
+            </div>
+        </div>
+
+        <!-- Marquee Row 2 - scrolls right -->
+        <div class="tech-marquee">
+            <div class="tech-marquee-track marquee-right">
+                <div class="tech-card"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                <div class="tech-card"><i class="fab fa-rust"></i><span>Rust</span></div>
+                <div class="tech-card"><i class="fas fa-fire"></i><span>Firebase</span></div>
+                <div class="tech-card"><i class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="tech-card"><i class="fas fa-robot"></i><span>TensorFlow</span></div>
+                <div class="tech-card"><i class="fas fa-cube"></i><span>Kubernetes</span></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="tech-card"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                <div class="tech-card"><i class="fab fa-rust"></i><span>Rust</span></div>
+                <div class="tech-card"><i class="fas fa-fire"></i><span>Firebase</span></div>
+                <div class="tech-card"><i class="fab fa-figma"></i><span>Figma</span></div>
+                <div class="tech-card"><i class="fas fa-robot"></i><span>TensorFlow</span></div>
+                <div class="tech-card"><i class="fas fa-cube"></i><span>Kubernetes</span></div>
+            </div>
+        </div>
+
+        <!-- Marquee Row 3 - scrolls left slower -->
+        <div class="tech-marquee">
+            <div class="tech-marquee-track marquee-left-slow">
+                <div class="tech-card"><i class="fab fa-github"></i><span>GitHub</span></div>
+                <div class="tech-card"><i class="fab fa-linux"></i><span>Linux</span></div>
+                <div class="tech-card"><i class="fas fa-bolt"></i><span>Redis</span></div>
+                <div class="tech-card"><i class="fab fa-golang"></i><span>Go</span></div>
+                <div class="tech-card"><i class="fas fa-network-wired"></i><span>GraphQL</span></div>
+                <div class="tech-card"><i class="fab fa-stripe-s"></i><span>Stripe</span></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="tech-card"><i class="fab fa-github"></i><span>GitHub</span></div>
+                <div class="tech-card"><i class="fab fa-linux"></i><span>Linux</span></div>
+                <div class="tech-card"><i class="fas fa-bolt"></i><span>Redis</span></div>
+                <div class="tech-card"><i class="fab fa-golang"></i><span>Go</span></div>
+                <div class="tech-card"><i class="fas fa-network-wired"></i><span>GraphQL</span></div>
+                <div class="tech-card"><i class="fab fa-stripe-s"></i><span>Stripe</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="section-header">
+            <span class="section-tag">Our Work</span>
+            <h2 class="section-title">Portfolio</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Real-world solutions we've delivered for clients across industries.</p>
+        </div>
+
+        <div class="pf-grid">
+            <!-- Gym & Fitness -->
+            <div class="pf-card">
+                <div class="pf-card-preview" style="background: linear-gradient(135deg, #1a0a0a, #2a1010);">
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_tutvdkg0.json" background="transparent" speed="1" class="pf-lottie" loop autoplay></lottie-player>
+                    <div class="pf-card-metrics">
+                        <div><strong>50K+</strong><span>Members</span></div>
+                        <div><strong>200+</strong><span>Gyms</span></div>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-meta"><span class="pf-badge">Fitness</span><span class="pf-date">2025</span></div>
+                    <h3>FitPulse Pro</h3>
+                    <p>All-in-one gym management platform with AI-powered workout plans, member tracking, and real-time class scheduling.</p>
+                    <div class="pf-techs"><span>React Native</span><span>Node.js</span><span>MongoDB</span></div>
+                </div>
+            </div>
+
+            <!-- FinTech -->
+            <div class="pf-card">
+                <div class="pf-card-preview" style="background: linear-gradient(135deg, #1a0a3e, #0a2818);">
+                    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_kyu7xb1v.json" background="transparent" speed="1" class="pf-lottie" loop autoplay></lottie-player>
+                    <div class="pf-card-metrics">
+                        <div><strong>$500M+</strong><span>Daily Volume</span></div>
+                        <div><strong>0.01s</strong><span>Execution</span></div>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-meta"><span class="pf-badge purple">FinTech</span><span class="pf-date">2025</span></div>
+                    <h3>CryptoFlow Exchange</h3>
+                    <p>High-frequency decentralized exchange with sub-second trade execution and deep liquidity pools.</p>
+                    <div class="pf-techs"><span>Solidity</span><span>Rust</span><span>React</span></div>
+                </div>
+            </div>
+
+            <!-- HealthTech -->
+            <div class="pf-card">
+                <div class="pf-card-preview" style="background: linear-gradient(135deg, #0a2818, #1a180a);">
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_pk5mpw6j.json" background="transparent" speed="1" class="pf-lottie" loop autoplay></lottie-player>
+                    <div class="pf-card-metrics">
+                        <div><strong>2M+</strong><span>Patients</span></div>
+                        <div><strong>50</strong><span>States</span></div>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-meta"><span class="pf-badge">HealthTech</span><span class="pf-date">2024</span></div>
+                    <h3>MediSync Platform</h3>
+                    <p>HIPAA-compliant telemedicine platform connecting patients with providers across the country.</p>
+                    <div class="pf-techs"><span>Node.js</span><span>React</span><span>AWS</span></div>
+                </div>
+            </div>
+
+            <!-- SaaS -->
+            <div class="pf-card">
+                <div class="pf-card-preview" style="background: linear-gradient(135deg, #1a180a, #0a1628);">
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent" speed="1" class="pf-lottie" loop autoplay></lottie-player>
+                    <div class="pf-card-metrics">
+                        <div><strong>99.99%</strong><span>Uptime</span></div>
+                        <div><strong>5K+</strong><span>Servers</span></div>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-meta"><span class="pf-badge purple">SaaS</span><span class="pf-date">2024</span></div>
+                    <h3>CloudOps Dashboard</h3>
+                    <p>Real-time infrastructure monitoring with predictive alerts and intelligent auto-scaling.</p>
+                    <div class="pf-techs"><span>Go</span><span>Kubernetes</span><span>Grafana</span></div>
+                </div>
+            </div>
+
+            <!-- E-Commerce -->
+            <div class="pf-card">
+                <div class="pf-card-preview" style="background: linear-gradient(135deg, #0a1628, #280a18);">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_5ngs2ksb.json" background="transparent" speed="1" class="pf-lottie" loop autoplay></lottie-player>
+                    <div class="pf-card-metrics">
+                        <div><strong>1.2M</strong><span>Users</span></div>
+                        <div><strong>40%</strong><span>Conv. Rate</span></div>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-meta"><span class="pf-badge">E-Commerce</span><span class="pf-date">2023</span></div>
+                    <h3>LuxeCart Marketplace</h3>
+                    <p>AI-powered marketplace with personalized recommendations and immersive AR product preview.</p>
+                    <div class="pf-techs"><span>Next.js</span><span>Python</span><span>Three.js</span></div>
+                </div>
+            </div>
+
+            <!-- EdTech -->
+            <div class="pf-card">
+                <div class="pf-card-preview" style="background: linear-gradient(135deg, #0a1430, #1a1040);">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_swnrn2oy.json" background="transparent" speed="1" class="pf-lottie" loop autoplay></lottie-player>
+                    <div class="pf-card-metrics">
+                        <div><strong>500K+</strong><span>Students</span></div>
+                        <div><strong>92%</strong><span>Completion</span></div>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-meta"><span class="pf-badge purple">EdTech</span><span class="pf-date">2023</span></div>
+                    <h3>LearnFlow Academy</h3>
+                    <p>Adaptive learning platform with AI-powered curriculum and real-time student progress tracking.</p>
+                    <div class="pf-techs"><span>Python</span><span>React</span><span>GPT-4</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <!-- Top: Centered intro -->
+        <div class="about-intro">
+            <span class="section-tag">Who We Are</span>
+            <h2 class="about-main-title">We Don't Just Build Software.<br><span>We Engineer the Future.</span></h2>
+            <p class="about-main-desc">InfoAsis is a next-generation IT company where elite engineers, designers, and strategists come together to transform ambitious ideas into scalable digital realities.</p>
+        </div>
+
+        <!-- Middle: Two-column with numbers -->
+        <div class="about-columns">
+            <div class="about-col">
+                <div class="about-col-num">01</div>
+                <h3>Our Mission</h3>
+                <p>To empower businesses with technology that drives measurable impact. We believe in building products that are fast, secure, and built to scale from day one.</p>
+            </div>
+            <div class="about-col">
+                <div class="about-col-num">02</div>
+                <h3>Our Approach</h3>
+                <p>We combine agile methodology with deep technical expertise. Every project starts with understanding your business goals and ends with a solution that exceeds expectations.</p>
+            </div>
+        </div>
+
+        <!-- Bottom: Why Choose Us - horizontal cards -->
+        <div class="about-why">
+            <div class="about-why-card">
+                <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                <h4>Fast Delivery</h4>
+                <p>Ship production-ready features in days, not months.</p>
+            </div>
+            <div class="about-why-card">
+                <div class="why-icon"><i class="fas fa-lock"></i></div>
+                <h4>Enterprise Security</h4>
+                <p>SOC 2 compliant with zero-trust architecture.</p>
+            </div>
+            <div class="about-why-card">
+                <div class="why-icon"><i class="fas fa-chart-line"></i></div>
+                <h4>Built to Scale</h4>
+                <p>Cloud-native systems for millions of users.</p>
+            </div>
+            <div class="about-why-card">
+                <div class="why-icon"><i class="fas fa-headset"></i></div>
+                <h4>24/7 Support</h4>
+                <p>Dedicated team with round-the-clock availability.</p>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="about-cta">
+            <a href="#contact" class="btn-primary">Work With Us <i class="fas fa-arrow-right" style="margin-left:10px"></i></a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-cta">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="contact-title">Let's Build Something <span>Extraordinary</span></h2>
+            <p class="contact-desc">Ready to transform your business with cutting-edge technology? Let's discuss how InfoAsis can bring your vision to life.</p>
+            <a href="mailto:hello@infoasis.tech" class="btn-primary">Start a Project <i class="fas fa-arrow-right" style="margin-left:10px"></i></a>
+        </div>
+
+        <div class="contact-cards">
+            <div class="contact-card">
+                <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                <h4>Email Us</h4>
+                <p>For project inquiries and partnerships</p>
+                <a href="mailto:hello@infoasis.tech">infoasissupport@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                <h4>Call Us</h4>
+                <p>Mon - Fri, 9:00 AM - 6:00 PM</p>
+                <a href="tel:+15559876543">+91 9656192912</a>
+            </div>
+            <!-- <div class="contact-card">
+                <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h4>Visit Us</h4>
+                <p>Our headquarters location</p>
+                <span>San Francisco, CA 94105</span>
+            </div> -->
+        </div>
+
+        <div class="contact-socials">
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 InfoAsis. All rights reserved. Engineering the future.</p>
+    </footer>
+
+    <!-- ===== EXTERNAL SCRIPTS ===== -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+
+    <!-- ===== APP SCRIPTS ===== -->
+    <script src="js/main.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
